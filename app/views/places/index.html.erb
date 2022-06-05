@@ -1,7 +1,13 @@
 <h1>Places</h1>
+
 <%if @current_user%> 
   <p>
-    <a href="/places/new">New place</a>
+  <div 
+  <div class="row">
+   <div class="col-sm-9"> 
+    <a href="/places/new" class="position-relative m-4 btn btn-primary">New place </a>
+  </div>
+<div  
   </p>
 
   <ul>
@@ -10,6 +16,7 @@
     <% end %>
 
 <% else%> 
-  login to ...
+
+ <div class="position-relative"> Login to create a travel journal </div>
   </ul>
 <% end %>
