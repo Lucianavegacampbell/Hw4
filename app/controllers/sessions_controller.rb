@@ -10,18 +10,18 @@ class SessionsController < ApplicationController
         flash["notice"] = "Welcome!!"
         redirect_to "/places"
       else
-        flash["notice"] = "Nope."
+        flash["notice"] = "Nope"
         redirect_to "/login"
       end
     else
-      flash["notice"] = "Not identified"
+      flash["notice"] = "Nope"
       redirect_to "/login"
     end
   end
 
   def destroy
     session["user_id"] = nil
-    flash["notice"] = "Goodbye"
+    flash["notice"] = "Goodbye!"
     redirect_to "/login"
   end
 end
