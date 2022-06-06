@@ -20,6 +20,11 @@
     </p>
     <%= form.hidden_field "place_id" %>
     <%= form.hidden_field "user_id" %>
+
+    <div class="mb-3">
+      <%= form.label "uploaded_image", :class => "form-label" %>
+      <%= form.file_field "uploaded_image", :accept => "image/jpeg,image/jpg,image/png,image/gif", :class => "form-control" %>
+    </div>
    
   <% end %>
 <% else %>
