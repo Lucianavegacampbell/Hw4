@@ -22,7 +22,7 @@
   <div class="container-fluid">
    <%= flash["notice"] %>
     </div>   
-    <a class="navbar-brand ms-2" href="/">Home</a>
+    <a class="navbar-brand ms-2 border success" href="/">Home</a>
   <ul class="navbar-nav mb-2 mb-lg-0">
       <% if @current_user %>
        
@@ -33,7 +33,7 @@
       <% else %>
       <div class="col-md-12 text-end"> 
         <a href="/login" class="btn btn-light">Login</a> |
-        <a href="/users/new" class="btn btn-light">Sign Up</a>
+        <a href="/users/new" class="btn btn-light me-2">Sign Up</a>
       </div> <% end %> 
       
   </ul>    
